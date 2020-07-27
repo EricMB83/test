@@ -1,6 +1,10 @@
 body{background: #000}
+<<<<<<< HEAD
 
 div{
     font-size: 12px;
     color: #ccc;
 }
+=======
+header{background: #f00;}
+>>>>>>> a4af1043749449a1647c2a294af96d31b2c2765f

@@ -36,6 +36,10 @@ header ul li.active{
     width: 18.5%;
 }
 
+div[id^="seccion_muestra_"]{display: none;}
+
+div[id^="seccion_muestra_"].active{display: block;}
+
 footer{
     position: fixed;
     bottom: 0;

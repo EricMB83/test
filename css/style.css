@@ -30,3 +30,16 @@ header ul{
     color: #eaeaea;
     width: 18.5%;
 }
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #1d1d1d;
+    color: #eaeaea;
+    padding: 5px;
+}
+
+footer p{
+    margin: 0;
+}

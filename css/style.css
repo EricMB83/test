@@ -22,6 +22,11 @@ header ul{
     text-align: center;
 }
 
+header ul li.active{
+    background: silver;
+    color: #1d1d1d;
+}
+
 .menu_superior{
     list-style: none;
     display: inline-block;

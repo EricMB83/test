@@ -44,7 +44,7 @@ section{
 div[id^="seccion_muestra_"]{
     display: none;
     width: 95vw;
-    height: 82vh;
+    height: calc(100vh - 138px);
     margin: 5px auto 0;
     background-color: #1d1d1d;
     color: #eaeaea;

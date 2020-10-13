@@ -24,38 +24,25 @@ header ul{
 
 header ul li.active{
     background: silver;
-	color: #1d1d1d;
-	font-weight: bold;
+    color: #1d1d1d;
 }
 
 .menu_superior{
     list-style: none;
     display: inline-block;
-	padding: 5px;
-	cursor: pointer;
-	background-color: #1d1d1d;
+    padding: 5px;
+    background-color: #1d1d1d;
     color: #eaeaea;
     width: 18.5%;
 }
 
-<<<<<<< HEAD
 section{
     position: relative;
     height: 712px;
-=======
-.menu_superior:hover{
-	background: silver;
-	color: #1d1d1d;
-}
-
-section{
-	position: relative;
->>>>>>> 9a0d92405a10a71d89f0a39b7e9cae1bbbee1f89
 }
 
 div[id^="seccion_muestra_"]{
     display: none;
-<<<<<<< HEAD
     width: 95vw;
     height: 82vh;
     margin: 5px auto 0;
@@ -63,50 +50,15 @@ div[id^="seccion_muestra_"]{
     color: #eaeaea;
     text-align: center;
     padding: 5px;
-=======
-    color: #eaeaea;
-    text-align: center;
-    padding: 10px 5px;
->>>>>>> 9a0d92405a10a71d89f0a39b7e9cae1bbbee1f89
     border-radius: 8px;
 }
 
 div[id^="seccion_muestra_"].active{
-<<<<<<< HEAD
     display: block;
 }
 
 section div h1{
     margin: 0;
-=======
-	display: grid;
-	grid-template-rows: 100px auto 100px;
-    column-gap: 10px;
-	row-gap: 15px;
-}
-
-div.estilo-tabla#perfil_personal{
-	background-color: #1d1d1d;
-    width: 500px;
-    margin: auto;
-    height: 350px;
-}
-
-div#apartado_perfil_izquierda {
-    float: left;
-    width: 33%;
-    border-right: 5px solid silver;
-}
-
-div#apartado_perfil_derecha {
-    width: 66%;
-    float: right;
-}
-
-.habilidades {
-    width: 45%;
-    display: inline-block;
->>>>>>> 9a0d92405a10a71d89f0a39b7e9cae1bbbee1f89
 }
 
 footer{

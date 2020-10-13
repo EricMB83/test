@@ -43,18 +43,22 @@ section{
 
 div[id^="seccion_muestra_"]{
     display: none;
-    width: 95%;
-    height: calc(100% - 28px);
+    width: 95vw;
+    height: 82vh;
     margin: 5px auto 0;
     background-color: #1d1d1d;
     color: #eaeaea;
     text-align: center;
-    padding: 10px 5px;
+    padding: 5px;
     border-radius: 8px;
 }
 
 div[id^="seccion_muestra_"].active{
     display: block;
+}
+
+section div h1{
+    margin: 0;
 }
 
 footer{

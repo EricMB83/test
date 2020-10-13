@@ -33,7 +33,7 @@ header ul li.active{
     padding: 5px;
     background-color: #1d1d1d;
     color: #eaeaea;
-    width: 18.5%;
+    width: 18.5vw;
 }
 
 section{
@@ -43,11 +43,10 @@ section{
 
 div[id^="seccion_muestra_"]{
     display: none;
-    width: 95vw;
+    width: calc(100vw - 100px);
     height: calc(100vh - 138px);
     margin: 5px auto 0;
-    background-color: #1d1d1d;
-    color: #eaeaea;
+    color: #1d1d1d;
     text-align: center;
     padding: 5px;
     border-radius: 8px;
@@ -58,13 +57,20 @@ div[id^="seccion_muestra_"].active{
 }
 
 section div h1{
-    margin: 0;
+    margin: 15px 0 0;
+}
+
+section div hr{
+    width: 40vw;
+    margin: 0 auto;
+    border: none;
+    border-top: 1px solid #1d1d1d;
 }
 
 footer{
     position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 100vw;
     background: #1d1d1d;
     color: #eaeaea;
     padding: 5px;

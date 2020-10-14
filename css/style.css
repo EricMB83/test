@@ -52,6 +52,7 @@ div[id^="seccion_muestra_"]{
     margin: 5px auto 0;
     color: #1d1d1d;
     text-align: center;
+    position: relative;
     padding: 5px;
     border-radius: 8px;
 }

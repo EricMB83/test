@@ -34,6 +34,12 @@ header ul li.active{
     width: 18.5vw;
 }
 
+.menu_superior:hover{
+    background: #888;
+    color: #eaeaea;
+    cursor: pointer;
+}
+
 section{
     position: relative;
     height: 712px;

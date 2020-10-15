@@ -12,16 +12,16 @@
         <div><img src="https://i.imgur.com/PlivTV2.png" alt="logo"></div>
         <div>
             <ul>
-                <li class="menu_superior active" onclick="cambiarApartado(0)">ÍNDICE</li>
-                <li class="menu_superior" onclick="cambiarApartado(1)">FILTRO</li>
+                <li class="menu_superior" onclick="cambiarApartado(0)">ÍNDICE</li>
+                <li class="menu_superior active" onclick="cambiarApartado(1)">FILTRO</li>
                 <li class="menu_superior" onclick="cambiarApartado(2)">CALCULADORA</li>
                 <li class="menu_superior" onclick="cambiarApartado(3)">ABOUT</li>
             </ul>
         </div>
     </header>
     <section>
-        <div id="seccion_muestra_0" class="active">
-            <h1>ÍNDICE</h1>
+        <div id="seccion_muestra_0">
+            <h4>ÍNDICE</h4>
             <hr/>
             <div id="cb_contenedor">
                 <div id="cb_letrero">IN PROGRESS!</div>
@@ -31,16 +31,71 @@
                 <div id="cb_base"></div>
             </div>
         </div>
-        <div id="seccion_muestra_1">
-            <h1>FILTRO</h1>
+        <div id="seccion_muestra_1" class="active">
+            <h4>En este ejercicio de ejemplo, se demuestra que mediante CSS y HTML se puede crear una interfaz seleccionable y con JS implementar las funciones necesarias para filtrar los elementos de una lista.</h4>
             <hr/>
+            <div>
+                <div class="cajas" style="width: 28.2%;">
+                    <ul class="listas-filtros grp0"><li class="filtros titulo"><b class="filter-child">OJOS</b></li>
+                        <li class="filtros"><a href="#" name="todo" class="selected filter-child" onclick="filtroTriple(event, 'grp0', 1)">TODO</a></li>
+                        <li class="filtros"><a href="#" name="ojos_azul" class="filter-child" onclick="filtroTriple(event, 'grp0', 2)">AZULES</a></li>
+                        <li class="filtros"><a href="#" name="ojos_marron" class="filter-child" onclick="filtroTriple(event, 'grp0', 3)">MARRONES</a></li>
+                        <li class="filtros"><a href="#" name="ojos_verde" class="filter-child" onclick="filtroTriple(event, 'grp0', 4)">VERDES</a></li>
+                        <li class="filtros"><a href="#" name="ojos_gris" class="filter-child" onclick="filtroTriple(event, 'grp0', 5)">GRISES</a></li>
+                    </ul>
+                    <ul class="listas-filtros grp1"><li class="filtros titulo"><b class="filter-child">PELO</b></li>
+                        <li class="filtros"><a href="#" name="todo" class="selected filter-child" onclick="filtroTriple(event, 'grp1', 1)">TODO</a></li>
+                        <li class="filtros"><a href="#" name="pelo_rubio" class="filter-child" onclick="filtroTriple(event, 'grp1', 2)">RUBIO</a></li>
+                        <li class="filtros"><a href="#" name="pelo_moreno" class="filter-child" onclick="filtroTriple(event, 'grp1', 3)">MORENO</a></li>
+                        <li class="filtros"><a href="#" name="pelo_casta%C3%B1oCL" class="filter-child" onclick="filtroTriple(event, 'grp1', 4)">CASTAÑO CLARO</a></li>
+                        <li class="filtros"><a href="#" name="pelo_casta%C3%B1oOS" class="filter-child" onclick="filtroTriple(event, 'grp1', 5)">CASTAÑO OSCURO</a></li>
+                        <li class="filtros"><a href="#" name="pelo_pelirrojo" class="filter-child" onclick="filtroTriple(event, 'grp1', 6)">PELIRROJO</a></li>
+                        <li class="filtros"><a href="#" name="pelo_gris" class="filter-child" onclick="filtroTriple(event, 'grp1', 7)">VERDE</a></li>
+                        <li class="filtros"><a href="#" name="pelo_otro_color" class="filter-child" onclick="filtroTriple(event, 'grp1', 8)">OTROS COLORES</a></li>
+                    </ul>
+                    <ul class="listas-filtros grp2"><li class="filtros titulo"><b class="filter-child">EDAD</b></li>
+                        <li class="filtros"><a href="#" name="todo" class="selected filter-child" onclick="filtroTriple(event, 'grp2', 1)">TODO</a></li>
+                        <li class="filtros"><a href="#" name="edad_10" class="filter-child" onclick="filtroTriple(event, 'grp2', 2)">MENOR DE 10</a></li>
+                        <li class="filtros"><a href="#" name="edad_11-14" class="filter-child" onclick="filtroTriple(event, 'grp2', 3)">11 / 14</a></li>
+                        <li class="filtros"><a href="#" name="edad_15-20" class="filter-child" onclick="filtroTriple(event, 'grp2', 4)">15 / 20</a></li>
+                        <li class="filtros"><a href="#" name="edad_21-24" class="filter-child" onclick="filtroTriple(event, 'grp2', 5)">21 / 24</a></li>
+                        <li class="filtros"><a href="#" name="edad_25-29" class="filter-child" onclick="filtroTriple(event, 'grp2', 6)">25 / 29</a></li>
+                        <li class="filtros"><a href="#" name="edad_30-39" class="filter-child" onclick="filtroTriple(event, 'grp2', 7)">30 / 39</a></li>
+                        <li class="filtros"><a href="#" name="edad_40-49" class="filter-child" onclick="filtroTriple(event, 'grp2', 8)">40 / 49</a></li>
+                        <li class="filtros"><a href="#" name="edad_50-59" class="filter-child" onclick="filtroTriple(event, 'grp2', 9)">50 / 59</a></li>
+                        <li class="filtros"><a href="#" name="edad_60-69" class="filter-child" onclick="filtroTriple(event, 'grp2', 10)">60 / 69</a></li>
+                        <li class="filtros"><a href="#" name="edad_70" class="filter-child" onclick="filtroTriple(event, 'grp2', 11)">MAYOR DE 70</a></li>
+                    </ul>
+                    <ul class="listas-filtros grp3"><li class="filtros titulo"><b class="filter-child">PIEL</b></li>
+                        <li class="filtros"><a href="#" name="todo" class="selected filter-child" onclick="filtroTriple(event, 'grp3', 1)">TODO</a></li>
+                        <li class="filtros"><a href="#" name="piel_clara" class="filter-child" onclick="filtroTriple(event, 'grp3', 2)">CLARA</a></li>
+                        <li class="filtros"><a href="#" name="piel_oscura" class="filter-child" onclick="filtroTriple(event, 'grp3', 3)">OSCURA</a></li>
+                    </ul>
+                    <ul class="listas-filtros grp4"><li class="filtros titulo"><b class="filter-child">GÉNERO</b></li>
+                        <li class="filtros"><a href="#" name="todo" class="selected filter-child" onclick="filtroTriple(event, 'grp4', 1)">TODO</a></li>
+                        <li class="filtros"><a href="#" name="genero_femenino" class="filter-child" onclick="filtroTriple(event, 'grp4', 2)">PB MASCULINO</a></li>
+                        <li class="filtros"><a href="#" name="genero_masculino" class="filter-child" onclick="filtroTriple(event, 'grp4', 3)">PB FEMENINO</a></li>
+                    </ul>
+                </div>
+                <div id="lista_pbs" class="cajas">
+                    <!-- NOMBRES AAA -->
+                    <img class="imagenes-pb todo ojos pelo edad piel genero active" src="https://via.placeholder.com/150" alt="imagen pb"/>
+                    <img class="imagenes-pb todo ojos pelo edad piel genero active" src="https://via.placeholder.com/150" alt="imagen pb"/>
+                    <img class="imagenes-pb todo ojos pelo edad piel genero active" src="https://via.placeholder.com/150" alt="imagen pb"/>
+                    <img class="imagenes-pb todo ojos pelo edad piel genero active" src="https://via.placeholder.com/150" alt="imagen pb"/>
+                    <img class="imagenes-pb todo ojos pelo edad piel genero active" src="https://via.placeholder.com/150" alt="imagen pb"/>
+                </div>
+                <script>
+                    filtroTriple();
+                </script>
+            </div>
         </div>
         <div id="seccion_muestra_2">
-            <h1>CALCULADORA</h1>
+            <h4>CALCULADORA</h4>
             <hr/>
         </div>
         <div id="seccion_muestra_3">
-            <h1>ABOUT</h1>
+            <h4>ABOUT</h4>
             <hr/>
         </div>
     </section>

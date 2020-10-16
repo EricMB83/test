@@ -167,11 +167,10 @@ div#cb_base {
 
 /* |-|-| FILTRO |-|-| */
 
-div#directorio_pbs{
-    position: absolute;
-    top: -160px;
-    width: 750px;
-    text-align: center;
+#cont_filtro{
+    width: 100%;
+    height: calc(100% - 150px);
+    margin-top: 20px;
 }
 
 .cajas{
@@ -182,7 +181,7 @@ div#directorio_pbs{
     background: #a5c5d2;
     margin: 0;
     padding: 10px 15px;
-    text-align: left;
+    text-align: center;
 }
 
 .listas-filtros li:first-child {
@@ -218,7 +217,9 @@ li.filtros {
 
 div#lista_pbs {
     padding: 5px 0;
-    width: 71.8%;
+    width: 75%;
+    height: calc(100%);
+    overflow-y: scroll;
 }
 
 div#lista_pbs img {

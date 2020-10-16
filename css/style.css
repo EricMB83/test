@@ -155,15 +155,31 @@ div#cb_palo {
 
 div#cb_base {
     border: 5px solid black;
-    height: 125px;
+    height: 284px;
     width: 284px;
     top: 168px;
     left: -20px;
     border-radius: 50%;
     clip-path: polygon(0% 46%, 40% -180%, 102% 46%);
+    animation-name: mypenis;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
 }
 
 /* |-|-|-|-|-|-|-|-|-|-|-| */
+
+/* ANIMACIÓN */
+
+@keyframes mypenis {
+    0% {
+        transform: rotate(150deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* ------ */
 
 /* |-|-| FILTRO |-|-| */
 

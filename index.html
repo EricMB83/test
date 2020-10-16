@@ -12,16 +12,16 @@
         <div><img src="https://i.imgur.com/PlivTV2.png" alt="logo"></div>
         <div>
             <ul>
-                <li class="menu_superior active" onclick="cambiarApartado(0)">ÍNDICE</li>
-                <li class="menu_superior" onclick="cambiarApartado(1)">FILTRO</li>
+                <li class="menu_superior" onclick="cambiarApartado(0)">ÍNDICE</li>
+                <li class="menu_superior active" onclick="cambiarApartado(1)">FILTRO</li>
                 <li class="menu_superior" onclick="cambiarApartado(2)">CALCULADORA</li>
                 <li class="menu_superior" onclick="cambiarApartado(3)">ABOUT</li>
             </ul>
         </div>
     </header>
     <section>
-        <div id="seccion_muestra_0" class="active">
-            <h1>ÍNDICE</h1>
+        <div id="seccion_muestra_0">
+            <h4>ÍNDICE</h4>
             <hr/>
             <div id="cb_contenedor">
                 <div id="cb_letrero">IN PROGRESS!</div>
@@ -31,21 +31,96 @@
                 <div id="cb_base"></div>
             </div>
         </div>
-        <div id="seccion_muestra_1">
-            <h1>FILTRO</h1>
+        <div id="seccion_muestra_1" class="active">
+            <h4>En este ejercicio de ejemplo, se demuestra que mediante CSS y HTML se puede crear una interfaz seleccionable y con JS implementar las funciones necesarias para filtrar los elementos de una lista.</h4>
             <hr/>
+            <div id="cont_filtro">
+                <div class="cajas" style="width: 15%;">
+                    <ul class="listas-filtros grp0"><li class="filtros titulo"><b class="filter-child">COLORES</b></li>
+                        <li class="filtros"><a href="#" name="todo" class="selected filter-child" onclick="filtroTriple(event, 'grp0', 1)">TODO</a></li>
+                        <li class="filtros"><a href="#" name="rojo" class="filter-child" onclick="filtroTriple(event, 'grp0', 2)">ROJOS</a></li>
+                        <li class="filtros"><a href="#" name="amarillo" class="filter-child" onclick="filtroTriple(event, 'grp0', 3)">AMARILLOS</a></li>
+                        <li class="filtros"><a href="#" name="verde" class="filter-child" onclick="filtroTriple(event, 'grp0', 4)">VERDES</a></li>
+                        <li class="filtros"><a href="#" name="violeta" class="filter-child" onclick="filtroTriple(event, 'grp0', 5)">VIOLETAS</a></li>
+                    </ul>
+                    <ul class="listas-filtros grp1"><li class="filtros titulo"><b class="filter-child">TONOS</b></li>
+                        <li class="filtros"><a href="#" name="todo" class="selected filter-child" onclick="filtroTriple(event, 'grp1', 1)">TODO</a></li>
+                        <li class="filtros"><a href="#" name="claro" class="filter-child" onclick="filtroTriple(event, 'grp1', 2)">CLAROS</a></li>
+                        <li class="filtros"><a href="#" name="medio" class="filter-child" onclick="filtroTriple(event, 'grp1', 3)">MEDIOS</a></li>
+                        <li class="filtros"><a href="#" name="oscuro" class="filter-child" onclick="filtroTriple(event, 'grp1', 4)">OSCUROS</a></li>
+                    </ul>
+                    <ul class="listas-filtros grp2"><li class="filtros titulo"><b class="filter-child">TAMAÑOS</b></li>
+                        <li class="filtros"><a href="#" name="todo" class="selected filter-child" onclick="filtroTriple(event, 'grp2', 1)">TODO</a></li>
+                        <li class="filtros"><a href="#" name="80px" class="filter-child" onclick="filtroTriple(event, 'grp2', 2)">80 PX</a></li>
+                        <li class="filtros"><a href="#" name="90px" class="filter-child" onclick="filtroTriple(event, 'grp2', 3)">90 PX</a></li>
+                        <li class="filtros"><a href="#" name="100px" class="filter-child" onclick="filtroTriple(event, 'grp2', 4)">100 PX</a></li>
+                        <li class="filtros"><a href="#" name="110px" class="filter-child" onclick="filtroTriple(event, 'grp2', 5)">110 PX</a></li>
+                        <li class="filtros"><a href="#" name="120px" class="filter-child" onclick="filtroTriple(event, 'grp2', 6)">120 PX</a></li>
+                        <li class="filtros"><a href="#" name="130px" class="filter-child" onclick="filtroTriple(event, 'grp2', 7)">130 PX</a></li>
+                        <li class="filtros"><a href="#" name="140px" class="filter-child" onclick="filtroTriple(event, 'grp2', 8)">140 PX</a></li>
+                        <li class="filtros"><a href="#" name="150px" class="filter-child" onclick="filtroTriple(event, 'grp2', 9)">150 PX</a></li>
+                        <li class="filtros"><a href="#" name="160px" class="filter-child" onclick="filtroTriple(event, 'grp2', 10)">160 PX</a></li>
+                    </ul>
+                </div>
+                <div id="lista_pbs" class="cajas">
+                    <!-- NOMBRES AAA -->
+                    <img class="imagenes-pb todo 80px pelo edad" src="https://via.placeholder.com/80/e3474b" alt="imagen pb"/>
+                    <img class="imagenes-pb todo 80px pelo edad" src="https://via.placeholder.com/80" alt="imagen pb"/>
+                    <img class="imagenes-pb todo 80px pelo edad" src="https://via.placeholder.com/80" alt="imagen pb"/>
+                    <img class="imagenes-pb todo 90px pelo edad" src="https://via.placeholder.com/90" alt="imagen pb"/>
+                    <img class="imagenes-pb todo 90px pelo edad" src="https://via.placeholder.com/90" alt="imagen pb"/>
+                    <img class="imagenes-pb todo 90px pelo edad" src="https://via.placeholder.com/90" alt="imagen pb"/>
+                    <img class="imagenes-pb todo 100px pelo edad" src="https://via.placeholder.com/100" alt="imagen pb"/>
+                    <img class="imagenes-pb todo 100px pelo edad" src="https://via.placeholder.com/100" alt="imagen pb"/>
+                    <img class="imagenes-pb todo 100px pelo edad" src="https://via.placeholder.com/100" alt="imagen pb"/>
+                    <img class="imagenes-pb todo 110px pelo edad" src="https://via.placeholder.com/110" alt="imagen pb"/>
+                    <img class="imagenes-pb todo 110px pelo edad" src="https://via.placeholder.com/110" alt="imagen pb"/>
+                    <img class="imagenes-pb todo 110px pelo edad" src="https://via.placeholder.com/110" alt="imagen pb"/>
+                    <img class="imagenes-pb todo 120px pelo edad" src="https://via.placeholder.com/120" alt="imagen pb"/>
+                    <img class="imagenes-pb todo 120px pelo edad" src="https://via.placeholder.com/120" alt="imagen pb"/>
+                    <img class="imagenes-pb todo 120px pelo edad" src="https://via.placeholder.com/120" alt="imagen pb"/>
+                    <img class="imagenes-pb todo 130px pelo edad" src="https://via.placeholder.com/130" alt="imagen pb"/>
+                    <img class="imagenes-pb todo 130px pelo edad" src="https://via.placeholder.com/130" alt="imagen pb"/>
+                    <img class="imagenes-pb todo 130px pelo edad" src="https://via.placeholder.com/130" alt="imagen pb"/>
+                    <img class="imagenes-pb todo 140px pelo edad" src="https://via.placeholder.com/140" alt="imagen pb"/>
+                    <img class="imagenes-pb todo 140px pelo edad" src="https://via.placeholder.com/140" alt="imagen pb"/>
+                    <img class="imagenes-pb todo 140px pelo edad" src="https://via.placeholder.com/140" alt="imagen pb"/>
+                    <img class="imagenes-pb todo 150px pelo edad" src="https://via.placeholder.com/150" alt="imagen pb"/>
+                    <img class="imagenes-pb todo 150px pelo edad" src="https://via.placeholder.com/150" alt="imagen pb"/>
+                    <img class="imagenes-pb todo 150px pelo edad" src="https://via.placeholder.com/150" alt="imagen pb"/>
+                    <img class="imagenes-pb todo 160px pelo edad" src="https://via.placeholder.com/160" alt="imagen pb"/>
+                    <img class="imagenes-pb todo 160px pelo edad" src="https://via.placeholder.com/160" alt="imagen pb"/>
+                    <img class="imagenes-pb todo 160px pelo edad" src="https://via.placeholder.com/160" alt="imagen pb"/>
+                    <img class="imagenes-pb todo 80px pelo edad" src="https://via.placeholder.com/80" alt="imagen pb"/>
+                    <img class="imagenes-pb todo 90px pelo edad" src="https://via.placeholder.com/90" alt="imagen pb"/>
+                    <img class="imagenes-pb todo 100px pelo edad" src="https://via.placeholder.com/100" alt="imagen pb"/>
+                    <img class="imagenes-pb todo 110px pelo edad" src="https://via.placeholder.com/110" alt="imagen pb"/>
+                    <img class="imagenes-pb todo 120px pelo edad" src="https://via.placeholder.com/120" alt="imagen pb"/>
+                    <img class="imagenes-pb todo 130px pelo edad" src="https://via.placeholder.com/130" alt="imagen pb"/>
+                    <img class="imagenes-pb todo 140px pelo edad" src="https://via.placeholder.com/140" alt="imagen pb"/>
+                    <img class="imagenes-pb todo 150px pelo edad" src="https://via.placeholder.com/150" alt="imagen pb"/>
+                    <img class="imagenes-pb todo 160px pelo edad" src="https://via.placeholder.com/160" alt="imagen pb"/>
+                    <img class="imagenes-pb todo 80px pelo edad" src="https://via.placeholder.com/80" alt="imagen pb"/>
+                    <img class="imagenes-pb todo 90px pelo edad" src="https://via.placeholder.com/90" alt="imagen pb"/>
+                    <img class="imagenes-pb todo 100px pelo edad" src="https://via.placeholder.com/100" alt="imagen pb"/>
+                    <img class="imagenes-pb todo 110px pelo edad" src="https://via.placeholder.com/110" alt="imagen pb"/>
+                </div>
+            </div>
         </div>
         <div id="seccion_muestra_2">
-            <h1>CALCULADORA</h1>
+            <h4>CALCULADORA</h4>
             <hr/>
         </div>
         <div id="seccion_muestra_3">
-            <h1>ABOUT</h1>
+            <h4>ABOUT</h4>
             <hr/>
         </div>
     </section>
     <footer>
         <div><p>Eric MB &copy;<span id="fecha_copy"></span></p></div>
     </footer>
+    <script>
+        filtroTriple();
+    </script>
 </body>
 </html>

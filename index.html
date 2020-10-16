@@ -11,26 +11,30 @@
         <div><img src="https://i.imgur.com/PlivTV2.png" alt="logo"></div>
         <div>
             <ul>
-                <li class="menu_superior" onclick="cambiarApartado(0)">ÍNDICE</li>
-                <li class="menu_superior active" onclick="cambiarApartado(1)">FILTRO</li>
+                <li class="menu_superior active" onclick="cambiarApartado(0)">ÍNDICE</li>
+                <li class="menu_superior" onclick="cambiarApartado(1)">FILTRO</li>
                 <li class="menu_superior" onclick="cambiarApartado(2)">CALCULADORA</li>
                 <li class="menu_superior" onclick="cambiarApartado(3)">ABOUT</li>
             </ul>
         </div>
     </header>
     <section>
-        <div id="seccion_muestra_0">
+        <div id="seccion_muestra_0" class="active">
             <h4>ÍNDICE</h4>
             <hr/>
             <div id="cb_contenedor">
-                <div id="cb_letrero">IN PROGRESS!</div>
-                <div id="cb_separador01"></div>
-                <div id="cb_palo"></div>
-                <div id="cb_separador02"></div>
-                <div id="cb_base"></div>
+                <div id="cb_cont_letrero" class="tomahawk">
+                    <div id="cb_letrero">IN PROGRESS!</div>
+                    <div id="cb_separador01"></div>
+                    <div id="cb_palo"></div>
+                    <div id="cb_separador02"></div>
+                </div>
+                <div style="width: 257px;height: 50px;overflow: hidden;position: relative;">
+                    <div id="cb_base"></div>
+                </div>
             </div>
         </div>
-        <div id="seccion_muestra_1" class="active">
+        <div id="seccion_muestra_1">
             <h4>En este ejercicio de ejemplo, se demuestra que mediante CSS y HTML se puede crear una interfaz seleccionable y con JS implementar las funciones necesarias para filtrar los elementos de una lista.</h4>
             <hr/>
             <div id="cont_filtro">

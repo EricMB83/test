@@ -120,12 +120,16 @@ div#cb_cont_letrero{
     transform-origin: bottom center;
     transform: rotate(-10deg);
     position: relative;
-    top: -375px;
-    left: -68px;
+    top: -327px;
+    left: -600px;
     width: 240px;
     height: 240px;
     opacity: 0;
-    animation: volando 0.4s linear 5s forwards, tomahawk 0.4s linear 5s forwards;
+    animation-name: volando, tomahawk;
+    animation-duration: 0.4s;
+    animation-timing-function: linear;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
 }
 
 div#cb_letrero {
@@ -190,8 +194,8 @@ div#cb_palo {
         opacity: 0;
     }
     10% {
-        top: -375px;
-        left: -68px;
+        top: -327px;
+        left: -600px;
         opacity: 1;
     }
     100% {
@@ -201,21 +205,21 @@ div#cb_palo {
     }
 }
 
-@keyframes tomahawk{
-    0%{
-        transform: rotate(90%);
+@keyframes tomahawk {
+    0% {
+        transform: rotate(-10deg);
     }
     25%{
-        transform: rotate(180%);
+        transform: rotate(80deg);
     }
     50%{
-        transform: rotate(270%);
+        transform: rotate(170deg);
     }
     75%{
-        transform: rotate(360%);
+        transform: rotate(260deg);
     }
-    100%{
-        transform: rotate(450%);
+    100% {
+        transform: rotate(350deg);
     }
 }
 

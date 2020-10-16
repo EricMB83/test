@@ -19,17 +19,17 @@ function cambiarApartado(numero){
 
 /* FILTRO */
 
-var contenedor = document.getElementsByClassName("imagenes-pb");
-let result = new Array(5);
+var contenedor = document.querySelectorAll(".imagenes-pb");
+let result = new Array();
 let i = 0;
 
 do{
     result[i] = 1;
-    console.log(result);
     i++;
-} while(i < 5);
+} while(i < contenedor.length);
 
 function filtroTriple(evt, grupo, filtro){
+    
     if(evt != undefined || evt != null) evt.preventDefault();
     var selectorLista = document.getElementsByClassName(grupo);
     console.log("contenedor: " + contenedor.length);

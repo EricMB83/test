@@ -182,7 +182,7 @@ div#cb_palo {
 
 @keyframes dibujo {
     0% {
-        transform: rotate(150deg);
+        transform: rotate(98deg);
     }
     100% {
         transform: rotate(0deg);

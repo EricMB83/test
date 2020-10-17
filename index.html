@@ -11,15 +11,15 @@
         <div><img src="https://i.imgur.com/PlivTV2.png" alt="logo"></div>
         <div>
             <ul>
-                <li class="menu_superior active" onclick="cambiarApartado(0)">ÍNDICE</li>
-                <li class="menu_superior" onclick="cambiarApartado(1)">FILTRO</li>
+                <li class="menu_superior" onclick="cambiarApartado(0)">ÍNDICE</li>
+                <li class="menu_superior active" onclick="cambiarApartado(1)">FILTRO</li>
                 <li class="menu_superior" onclick="cambiarApartado(2)">CALCULADORA</li>
                 <li class="menu_superior" onclick="cambiarApartado(3)">ABOUT</li>
             </ul>
         </div>
     </header>
     <section>
-        <div id="seccion_muestra_0" class="active">
+        <div id="seccion_muestra_0">
             <h4>ÍNDICE</h4>
             <hr/>
             <div id="cb_contenedor">
@@ -34,7 +34,7 @@
                 </div>
             </div>
         </div>
-        <div id="seccion_muestra_1">
+        <div id="seccion_muestra_1" class="active">
             <h4>En este ejercicio de ejemplo, se demuestra que mediante CSS y HTML se puede crear una interfaz seleccionable y con JS implementar las funciones necesarias para filtrar los elementos de una lista.</h4>
             <hr/>
             <div id="cont_filtro">
@@ -66,7 +66,29 @@
                     </ul>
                 </div>
                 <div id="lista_pbs" class="cajas">
-                    <img class="imagenes-pb todo rojo medio 80px" src="https://via.placeholder.com/80/e3474b" alt="imagen pb"/>
+                    <!--
+                    ROJO
+                    /e3474b
+                    /ac191d
+                    /fd0006
+                    
+                    AMARILLO
+                    /ffd300
+                    /ad9419
+                    /e5ca47
+                    
+                    VERDE
+                    /0ad000
+                    /1a8d14
+                    /40b93a
+                    
+                    VIOLETA
+                    /6f48ec
+                    /543d9e
+                    /331d77
+                    
+                    -->
+                    <img class="imagenes-pb todo rojo medio 80px" src="https://via.placeholder.com/80" alt="imagen pb"/>
                     <img class="imagenes-pb todo 80px pelo edad" src="https://via.placeholder.com/80" alt="imagen pb"/>
                     <img class="imagenes-pb todo 80px pelo edad" src="https://via.placeholder.com/80" alt="imagen pb"/>
                     <img class="imagenes-pb todo 90px pelo edad" src="https://via.placeholder.com/90" alt="imagen pb"/>

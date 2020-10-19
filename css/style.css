@@ -46,6 +46,12 @@ header ul li.active{
     cursor: pointer;
 }
 
+.menu_superior.active:hover{
+    background: silver;
+    color: #1d1d1d;
+    cursor: default;
+}
+
 /* |-|-|-|-|-|-|-|-|-|-|-| */
 
 /* |-|-| SECTION |-|-| */
